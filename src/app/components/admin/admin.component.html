@@ -1,0 +1,6 @@
+<div
+  class="main_content"
+  *ngFor="let vacation of this.vacationService.vacations"
+>
+  <app-vacation [data]="vacation"></app-vacation>
+</div>

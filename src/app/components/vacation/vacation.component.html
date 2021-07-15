@@ -1,0 +1,13 @@
+<div class="card_div">
+  <img src="{{ data.image }}" alt="" />
+  <div>{{ data.destination }}</div>
+  <div>{{ data.description }}</div>
+  <div>{{ data.price }}$</div>
+  <button
+    *ngIf="userService.userRole === 'Admin'"
+    class="delete_btn"
+    (click)="delete()"
+  >
+    Delete
+  </button>
+</div>
